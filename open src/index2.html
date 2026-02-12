@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <img src="nyqnxeb6y4.gif" class="heart" alt="Valentine Heart" background="black"> 
+
+    <div class="text">
+        <h1>Yea thx ik u would say yes</h1>
+        <h1> i love you too Lol</h1>
+    </div>
+</body>
+</html>
+
+<script>
+
+const confettiColors = ['#e0a3d6', '#2a1a4d', '#ffbdf9', '#bdfcff', '#fff', '#ff6bcb'];
+const chocolateEmojis = ['🍫', '🍩', '🍪'];
+function createConfetti() {
+    const confetti = document.createElement('div');
+    confetti.className = 'heart-fall';
+    confetti.innerHTML = Math.random() < 0.7 ? '❤' : chocolateEmojis[Math.floor(Math.random() * chocolateEmojis.length)];
+    confetti.style.left = Math.random() * window.innerWidth + 'px';
+    confetti.style.fontSize = (Math.random() * 1.5 + 1.5) + 'rem';
+    confetti.style.color = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+    confetti.style.animationDuration = (Math.random() * 2 + 3) + 's';
+    document.body.appendChild(confetti);
+    setTimeout(() => confetti.remove(), 4000);
+}
+setInterval(createConfetti, 250);
+</script>

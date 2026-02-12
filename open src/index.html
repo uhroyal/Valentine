@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 💌 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <img src="default-ask.gif" class="heart" alt="Valentine Heart">
+</div>
+    <div class="text">
+        <h1>Will you be my Valentine?</h1>
+        <button class="button"  id="yesBtn">Yes ofc</button>
+        <button class="button" id="noBtn">No lol</button>
+        
+    </div>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="evangeline - pastel ghost · iris.mp3" type="audio/mpeg">
+    </audio>
+    <script src="val.js"></script>
+    <script>
+
+                function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart-fall';
+            heart.innerHTML = '❤';
+            heart.style.left = Math.random() * window.innerWidth + 'px';
+            heart.style.fontSize = (Math.random() * 1.5 + 1.5) + 'rem';
+            heart.style.animationDuration = (Math.random() * 2 + 3) + 's';
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 4000);
+        }
+        setInterval(createHeart, 350);
+    </script>
+</body>
+<div class="background"></div>
+
+</body>
+</html>

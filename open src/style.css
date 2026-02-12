@@ -1,0 +1,157 @@
+body {
+    background: #000;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(9px);
+    pointer-events: none;
+    background: linear-gradient(135deg, #2a1a4d 40%, #e0a3d6 100%);
+    background-size: cover;
+}
+
+.heart-fall {
+    position: fixed;
+    top: -40px;
+    left: 0;
+    font-size: 2.5rem;
+    opacity: 0.85;
+    pointer-events: none;
+    animation: heartFall 3.5s linear infinite;
+    z-index: 100;
+}
+
+@keyframes heartFall {
+    0% {
+        top: -40px;
+        opacity: 0.85;
+        transform: translateX(0) scale(1);
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(40px) scale(1.1);
+    }
+    100% {
+        top: 100vh;
+        opacity: 0.2;
+        transform: translateX(80px) scale(0.8);
+    }
+}
+
+.container {
+    box-shadow: 0 8px 32px rgba(42,26,77,0.18);
+    border-radius: 24px;
+    text-align: center;
+    backdrop-filter: blur(9px);
+    position: relative;
+    z-index: 2;
+    animation: popIn 1s;
+}
+
+.text {
+    position: relative;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    animation: fadeIn 1.2s;
+}
+
+.heart {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 32px auto;
+    animation: beat 1.2s infinite, popIn 1s;
+    filter: drop-shadow(0 0 16px #e0a3d6);
+    transition: filter 0.4s;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 36px;
+    color: #e0a3d6;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 0 4px 16px #2a1a4d, 0 2px 8px #e0a3d6;
+    animation: fadeIn 1.2s, popIn 1s;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 48px;
+    background: linear-gradient(90deg, #2a1a4d 60%, #e0a3d6 100%);
+    color: #ff0000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    border-radius: 36px;
+    margin: 24px 24px 0 24px;
+    border: none;
+    transition: background 0.3s, transform 0.2s, left 0.4s, top 0.4s, box-shadow 0.3s;
+    box-shadow: 0 4px 16px rgba(42,26,77,0.25);
+    cursor: pointer;
+    animation: fadeIn 1.2s, popIn 1s;
+    position: relative;
+    z-index: 2;
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #e0a3d6 60%, #2a1a4d 100%);
+    color: #2a1a4d;
+    transform: scale(1.12) rotate(-3deg);
+    box-shadow: 0 8px 32px rgba(226,163,214,0.35);
+}
+
+.fade-in {
+    animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    60% { transform: scale(1.15); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+
+.beat {
+    animation: beat 1.2s infinite;
+}
+@keyframes beat {
+    0%, 100% { transform: scale(1); }
+    20% { transform: scale(1.1); }
+    40% { transform: scale(0.95); }
+    60% { transform: scale(1.15); }
+    80% { transform: scale(0.98); }
+}
+
+.container, .text, h1, .heart {
+    animation: fadeIn 1.2s;
+}
+
