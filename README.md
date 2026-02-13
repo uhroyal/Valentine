@@ -1,8 +1,8 @@
 ## DirtyWrld Valentine's Day Website 💌
 
- This site is mostly used for asking your loved one to be your valentine. 
+You can preview the website here: https://dirtywrld.cc/valentine
 
-Open source so you can edit it and change it however you'd want! - My website with the valentine github on it: https://dirtywrld.cc/valentine
+Open source so you can edit it and change it however you'd want! 
 
 This is a super simple, kinda cheeky little Valentine's Day page I threw together.
 **"Will you be my Valentine?"**
