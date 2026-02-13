@@ -1,4 +1,4 @@
-## DirtyWrld Valentine's Day Website 💌
+## Valentine Day Proposal Website 💌💘
 
 You can preview the website here: https://dirtywrld.cc/valentine
 
