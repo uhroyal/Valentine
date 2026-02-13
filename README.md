@@ -1,10 +1,6 @@
 ## Valentine Day Proposal Website 💌💘
 
-You can preview the website here: https://dirtywrld.cc/valentine
-
 Open source so you can edit it and change it however you'd want! 
-
-
 
 Two buttons to pick from for the choice:
 
