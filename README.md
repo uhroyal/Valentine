@@ -4,10 +4,9 @@ You can preview the website here: https://dirtywrld.cc/valentine
 
 Open source so you can edit it and change it however you'd want! 
 
-This is a super simple, kinda cheeky little Valentine's Day page I threw together.
-**"Will you be my Valentine?"**
 
-Two buttons to pick from:
+
+Two buttons to pick from for the choice:
 
 - **Yes ofc** - Redirects you to index2.html and gives you a prompt   
 - **No lol** - You enter full screen as soon as you click no and the button runs away from you.
