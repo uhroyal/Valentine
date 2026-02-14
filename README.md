@@ -1,6 +1,6 @@
 ## Valentine Day Proposal Website 💌💘
 
-Open source so you can edit it and change it however you'd want! 
+Open source so you can edit it and change it however you'd want
 
 Two buttons to pick from for the choice:
 
